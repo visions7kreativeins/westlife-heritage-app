@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+
+/* ========== Base Theme ========== */
+:root {
+  --gold: #ffc300;
+  --red: #d62828;
+  --green: #007f5f;
+  --black: #000000;
+  --offwhite: #faf7f2;
+}
+
+body {
+  font-family: Poppins;
+  background-color: var(--black);
+  color: var(--offwhite);
+  scroll-behavior: smooth;
+}
+
+a {
+  transition: 0.2s ease-in-out;
+}
+
+/* ========== Buttons ========== */
+.btn-primary {
+  @apply bg-amber-600 text-black font-semibold px-6 py-3 rounded-full inline-block hover:scale-105 transform transition;
+}
+
+.btn-accent {
+  @apply bg-red-600 text-white px-5 py-2 rounded-md inline-block font-medium hover:opacity-90 transition;
+}
+
+/* ========== Patterns & Overlay ========== */
+.pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.hero-overlay {
+  background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 100%);
+}
+

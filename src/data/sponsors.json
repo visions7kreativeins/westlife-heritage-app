@@ -1,0 +1,32 @@
+[
+  {
+    "id": "wrcc",
+    "name": "Western Regional Coordinating Council",
+    "logo": "/images/sponsors/wrcc.png",
+    "url": "https://wrcc.gov.gh"
+  },
+  {
+    "id": "gta",
+    "name": "Ghana Tourism Authority",
+    "logo": "/images/sponsors/gta.png",
+    "url": "https://visitghana.com"
+  },
+  {
+    "id": "savita",
+    "name": "Savita House",
+    "logo": "/images/sponsors/savita.png",
+    "url": "#"
+  },
+  {
+    "id": "cnc",
+    "name": "Centre for National Culture",
+    "logo": "/images/sponsors/cnc.png",
+    "url": "#"
+  },
+  {
+    "id": "nsa",
+    "name": "National Sports Authority",
+    "logo": "/images/sponsors/nsa.png",
+    "url": "#"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "wrcc",
+    "name": "Western Regional Coordinating Council",
+    "logo": "/images/partners/wrcc.png"
+  },
+  {
+    "id": "gta",
+    "name": "Ghana Tourism Authority",
+    "logo": "/images/partners/gta.png"
+  },
+  {
+    "id": "savita",
+    "name": "Savita House",
+    "logo": "/images/partners/savita.png"
+  },
+  {
+    "id": "cnc",
+    "name": "Centre for National Culture",
+    "logo": "/images/partners/cnc.png"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "day": "Day 1",
+    "date": "December 5, 2025",
+    "title": "Opening Ceremony & Cultural Parade",
+    "time": "10:00 AM – 4:00 PM",
+    "venue": "Takoradi Jubilee Park",
+    "description": "An energetic opening event featuring traditional drumming, cultural floats, and performances by local schools and community groups. Dignitaries and regional icons join to officially open the festival."
+  },
+  {
+    "id": 2,
+    "day": "Day 2",
+    "date": "December 6, 2025",
+    "title": "Legends’ Night — Arts & Music Tribute",
+    "time": "6:00 PM – 11:00 PM",
+    "venue": "Sekondi Youth Centre",
+    "description": "A night of live highlife, Afrobeats, and spoken word dedicated to Ghanaian legends including C.K. Mann and Gyedu-Blay Ambolley."
+  },
+  {
+    "id": 3,
+    "day": "Day 3",
+    "date": "December 7, 2025",
+    "title": "Sports Fiesta",
+    "time": "9:00 AM – 3:00 PM",
+    "venue": "Essipon Stadium",
+    "description": "Friendly competitions and exhibition matches celebrating Western Region’s sports heritage — including a tribute to boxing and athletics legends."
+  },
+  {
+    "id": 4,
+    "day": "Day 4",
+    "date": "December 8, 2025",
+    "title": "Art & Photography Exhibition",
+    "time": "10:00 AM – 5:00 PM",
+    "venue": "Takoradi Library Grounds",
+    "description": "An open exhibition showcasing regional art, photography, and crafts inspired by Western Ghana’s culture and coastal beauty."
+  },
+  {
+    "id": 5,
+    "day": "Finale",
+    "date": "December 30, 2025",
+    "title": "The Grand Finale & Awards Gala",
+    "time": "6:00 PM – Till Late",
+    "venue": "Best Western Atlantic Hotel",
+    "description": "A glamorous closing night celebrating all honorees, with awards presentations, live performances, and closing remarks from key organizers and partners."
+  }
+]

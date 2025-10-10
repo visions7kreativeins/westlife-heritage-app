@@ -1,0 +1,44 @@
+[
+  {
+    "id": "nana-kobina-nketiah",
+    "name": "Nana Kobina Nketiah IV",
+    "category": "Culture",
+    "image": "/images/legends/nana-kobina-nketiah.jpg",
+    "bio": "A revered traditional leader and advocate for cultural preservation in the Western Region. Nana Kobina Nketiah IV is instrumental in uniting communities and promoting Ghanaian heritage through education, arts, and cultural initiatives."
+  },
+  {
+    "id": "gyedu-blay-ambolley",
+    "name": "Gyedu-Blay Ambolley",
+    "category": "Arts",
+    "image": "/images/legends/gyedu-blay-ambolley.jpg",
+    "bio": "Known as the originator of Simigwa music, Gyedu-Blay Ambolley is a legendary musician who fused highlife and funk to create Ghana’s unique Afrobeat sound. His artistry continues to inspire generations of African musicians."
+  },
+  {
+    "id": "kofi-kinaata",
+    "name": "Kofi Kinaata",
+    "category": "Arts",
+    "image": "/images/legends/kofi-kinaata.jpg",
+    "bio": "Multiple award-winning artist and lyricist from Takoradi, known for blending Fante idioms with modern music. Kofi Kinaata’s socially conscious lyrics have made him a cultural ambassador of the Western Region."
+  },
+  {
+    "id": "hannah-cudjoe",
+    "name": "Hannah Cudjoe",
+    "category": "Culture",
+    "image": "/images/legends/hannah-cudjoe.jpg",
+    "bio": "A leading female activist and nationalist, Hannah Cudjoe played a vital role in Ghana’s independence struggle and later worked tirelessly to promote women’s empowerment and cultural education."
+  },
+  {
+    "id": "ck-mann",
+    "name": "C.K. Mann",
+    "category": "Arts",
+    "image": "/images/legends/ck-mann.jpg",
+    "bio": "A highlife icon from the Western Region, C.K. Mann was known for timeless classics like ‘Adwoa Yankey’. His music bridged traditional Ghanaian rhythms with contemporary sounds, shaping the highlife genre."
+  },
+  {
+    "id": "eddie-blay",
+    "name": "Eddie Blay",
+    "category": "Sports",
+    "image": "/images/legends/eddie-blay.jpg",
+    "bio": "An Olympic bronze medalist and one of Ghana’s boxing legends, Eddie Blay remains a symbol of determination, discipline, and pride for the Western Region and the nation."
+  }
+]
