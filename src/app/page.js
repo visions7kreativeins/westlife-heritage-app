@@ -1,8 +1,49 @@
 'use client'
 
+
 import { motion } from 'framer-motion'
-import Countdown from '../components/Countdown'
+import dynamic from 'next/dynamic'
+const Countdown = dynamic(() => import('../components/Countdown'), { ssr: false })
 import Image from 'next/image'
+import { useState, useEffect } from 'react'
+import legends from '../data/legends.json'
+
+// Cleaned up LegendsCarousel using actual gallery images
+function LegendsCarousel() {
+    const [index, setIndex] = useState(0);
+    const images = legends.map(l => l.image);
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setIndex((prev) => (prev + 1) % images.length);
+      }, 3000);
+      return () => clearInterval(interval);
+    }, [images.length]);
+    return (
+      <div className="absolute inset-0 w-full h-full">
+        {images.map((src, i) => (
+          <Image
+            key={src}
+            src={src}
+            alt={`Legend ${i + 1}`}
+            fill
+            className={`object-cover transition-opacity duration-700 ${i === index ? 'opacity-100' : 'opacity-0'}`}
+            priority={i === 0}
+          />
+        ))}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              className={`w-2 h-2 rounded-full ${i === index ? 'bg-gold' : 'bg-white/60'} border border-gold`}
+              onClick={() => setIndex(i)}
+              aria-label={`Go to slide ${i + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+    );
+}
+// ...existing code...
 
 export default function Home() {
   return (
@@ -77,17 +118,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Legends Preview */}
-      <section className="py-20 bg-yellow-50 pattern">
-        <div className="max-w-6xl mx-auto px-6 md:px-8 text-center">
-          <h2 className="text-4xl font-heading text-gold mb-8">Meet the Legends</h2>
-          <p className="text-offwhite/80 max-w-2xl mx-auto mb-10">
-            Icons who defined generations — from the rhythms of Gyedu-Blay Ambolley to the grace of Nana Kobina Nketiah IV.  
-            Discover their stories, their legacies, and their enduring impact.
-          </p>
-          <a href="/legends" className="btn-accent">Explore Legends</a>
+
+
+      {/* Legends Carousel with Overlayed Preview */}
+      <section className="relative w-full h-96 flex items-center justify-center overflow-hidden">
+        <LegendsCarousel />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="max-w-6xl mx-auto px-6 md:px-8 text-center bg-black/40 rounded-xl py-12 shadow-lg backdrop-blur-sm">
+            <h2 className="text-4xl font-heading text-gold mb-8">Meet the Legends</h2>
+            <p className="text-offwhite/80 max-w-2xl mx-auto mb-10">
+              Icons who defined generations — from the rhythms of Gyedu-Blay Ambolley to the grace of Nana Kobina Nketiah IV.  
+              Discover their stories, their legacies, and their enduring impact.
+            </p>
+            <a href="/legends" className="btn-accent">Explore Legends</a>
+          </div>
         </div>
       </section>
+
 
       {/* Program & Gallery Preview */}
       <section className="py-20 max-w-6xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-12 items-center">

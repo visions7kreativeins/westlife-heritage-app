@@ -1,4 +1,5 @@
 import sponsors from '@/data/sponsors.json'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Sponsors — Best of the West Festival',
@@ -7,7 +8,7 @@ export const metadata = {
 
 export default function SponsorsPage() {
   return (
-    <section className="bg-black pattern text-offwhite py-20 min-h-screen">
+    <section className="bg-white pattern text-black py-20 min-h-screen">
       <div className="max-w-6xl mx-auto px-6 md:px-8 text-center">
         <h1 className="text-4xl md:text-5xl font-heading text-gold mb-4">
           Our Sponsors & Partners
@@ -26,10 +27,12 @@ export default function SponsorsPage() {
               rel="noopener noreferrer"
               className="flex flex-col items-center justify-center group hover:scale-105 transition-transform"
             >
-              <div className="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-gold/30 transition">
-                <img
+              <div className="bg-white p-6 rounded-xl border border-white/10 hover:border-amber-600/30 transition">
+                <Image
                   src={sponsor.logo}
                   alt={sponsor.name}
+                  width={200}
+                  height={80}
                   className="max-h-16 w-auto object-contain mb-3 opacity-90 group-hover:opacity-100 transition"
                 />
               </div>

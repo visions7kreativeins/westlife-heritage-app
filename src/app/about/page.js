@@ -1,4 +1,5 @@
  import partners from '../../data/partners.json'
+ import Image from 'next/image'
 
 export const metadata = {
   title: 'About — Best of the West Festival',
@@ -56,10 +57,12 @@ export default function About() {
                 className="flex flex-col items-center justify-center p-4 bg-white/5 rounded-lg hover:scale-105 transition transform"
               >
                 {p.logo ? (
-                  <img
+                  <Image
                     src={p.logo}
                     alt={p.name}
                     className="max-h-12 object-contain mb-2"
+                    width={200}
+                    height={80}
                   />
                 ) : (
                   <div className="text-offwhite text-center font-medium">{p.name}</div>

@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import galleryData from '../data/gallery.json'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, Play } from 'lucide-react'
+import Image from 'next/image'
 
 export default function GalleryClient() {
   const [selected, setSelected] = useState(null)
@@ -52,7 +53,7 @@ export default function GalleryClient() {
               onClick={() => setSelected(item)}
             >
               {item.type === 'image' ? (
-                <img
+                <Image
                   src={item.src}
                   alt={item.title}
                   className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
@@ -99,7 +100,7 @@ export default function GalleryClient() {
                 </button>
 
                 {selected.type === 'image' ? (
-                  <img
+                  <Image
                     src={selected.src}
                     alt={selected.title}
                     className="rounded-xl w-full h-auto max-h-[80vh] object-contain"

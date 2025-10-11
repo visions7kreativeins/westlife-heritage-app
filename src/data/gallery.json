@@ -1,37 +1,122 @@
 [
-  {
-    "id": 1,
-    "type": "image",
-    "src": "/images/gallery/opening-parade.jpg",
-    "title": "Opening Parade",
-    "category": "Culture"
-  },
-  {
-    "id": 2,
-    "type": "video",
-    "src": "/videos/legends-night.mp4",
-    "title": "Legends’ Night Performance",
-    "category": "Arts"
-  },
-  {
-    "id": 3,
-    "type": "image",
-    "src": "/images/gallery/boxing-fiesta.jpg",
-    "title": "Sports Fiesta — Boxing Exhibition",
-    "category": "Sports"
-  },
-  {
-    "id": 4,
-    "type": "image",
-    "src": "/images/gallery/art-exhibit.jpg",
-    "title": "Art & Photography Exhibition",
-    "category": "Arts"
-  },
-  {
-    "id": 5,
-    "type": "image",
-    "src": "/images/gallery/finale.jpg",
-    "title": "Grand Finale & Awards Gala",
-    "category": "Culture"
-  }
+  { "id": 1, 
+  "type": "image", 
+  "src": "/images/gallery/Picture1.png", 
+  "title": "Picture1", 
+  "category": "Arts" },
+
+
+  { "id": 2, 
+    "type": "image", 
+    "src": "/images/gallery/Picture2.png", 
+    "title": "Picture2", 
+    "category": "Culture" },
+  
+  { "id": 3, 
+    "type": "image", 
+    "src": "/images/gallery/Picture3.png", 
+    "title": "Picture3", 
+    "category": "Sports" },
+  
+  { "id": 4, 
+  "type": "image", 
+  "src": "/images/gallery/Picture4.png", 
+  "title": "Picture4", 
+  "category": "Arts" },
+
+  { "id": 5, 
+  "type": "image", 
+  "src": "/images/gallery/Picture5.png", 
+  "title": "Picture5", 
+  "category": "Culture" },
+
+  { "id": 6, 
+  "type": "image", 
+  "src": "/images/gallery/Picture6.png", 
+  "title": "Picture6", 
+  "category": "Sports" },
+
+  { "id": 7, 
+  "type": "image", 
+  "src": "/images/gallery/Picture7.png", 
+  "title": "Picture7", 
+  "category": "Arts" },
+
+  { "id": 8, 
+  "type": "image", 
+  "src": "/images/gallery/Picture8.png", 
+  "title": "Picture8", 
+  "category": "Culture" },
+
+  { "id": 9, 
+  "type": "image", 
+  "src": "/images/gallery/Picture9.png", 
+  "title": "Picture9", 
+  "category": "Sports" },
+
+  { "id": 10, 
+  "type": "image", 
+  "src": "/images/gallery/Picture10.png", 
+  "title": "Picture10", 
+  "category": "Arts" },
+
+  { "id": 11, 
+  "type": "image", 
+  "src": "/images/gallery/Picture11.png", 
+  "title": "Picture11", 
+  "category": "Culture" },
+
+  { "id": 12, 
+  "type": "image", 
+  "src": "/images/gallery/Picture12.png", 
+  "title": "Picture12", 
+  "category": "Sports" },
+
+  { "id": 13, 
+  "type": "image", 
+  "src": "/images/gallery/Picture13.png", 
+  "title": "Picture13", 
+  "category": "Arts" },
+
+  { "id": 14, 
+  "type": "image", 
+  "src": "/images/gallery/Picture14.png", 
+  "title": "Picture14", 
+  "category": "Culture" },
+
+  { "id": 15, 
+  "type": "image", 
+  "src": "/images/gallery/Picture15.png", 
+  "title": "Picture15", 
+  "category": "Sports" },
+
+  { "id": 16, 
+  "type": "image", 
+  "src": "/images/gallery/Picture16.png", 
+  "title": "Picture16", 
+  "category": "Arts" },
+
+  { "id": 17, 
+  "type": "image", 
+  "src": "/images/gallery/Picture17.png", 
+  "title": "Picture17", 
+  "category": "Culture" },
+
+  { "id": 18, 
+  "type": "image", 
+  "src": "/images/gallery/Picture18.png", 
+  "title": "Picture18", 
+  "category": "Culture" },
+
+  { "id": 19, 
+  "type": "image", 
+  "src": "/images/gallery/Picture19.png", 
+  "title": "Culture", 
+  "category": "Culture" },
+
+  { "id": 20, 
+  "type": "image", 
+  "src": "/images/gallery/Picture20.png", 
+  "title": "Durbur", 
+  "category": "Culture" }
 ]
