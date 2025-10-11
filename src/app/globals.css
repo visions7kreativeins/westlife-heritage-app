@@ -12,8 +12,8 @@
 
 body {
   font-family: Poppins;
-  background-color: var(--black);
-  color: var(--offwhite);
+  background-color: #fff;
+  color: #000;
   scroll-behavior: smooth;
 }
 

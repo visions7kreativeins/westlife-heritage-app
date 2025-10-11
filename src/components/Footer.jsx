@@ -11,7 +11,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-black/90 border-t border-white/10 text-offwhite/70 py-10 mt-20">
+    <footer className="bg-white border-t border-white/10 text-black py-10 mt-20">
       <div className="max-w-7xl mx-auto px-6 text-center space-y-6">
         {/* Footer Nav */}
         <div className="flex flex-wrap justify-center gap-5">

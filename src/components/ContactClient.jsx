@@ -19,7 +19,7 @@ export default function ContactClient() {
   }
 
   return (
-    <section className="bg-black pattern text-offwhite min-h-screen py-20">
+    <section className="bg-white text-black pattern min-h-screen py-20">
       <div className="max-w-5xl mx-auto px-6 md:px-8">
         <h1 className="text-4xl md:text-5xl font-heading text-gold text-center mb-4">
           Get in Touch

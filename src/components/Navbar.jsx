@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-black/90 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
+        scrolled ? 'bg-white/90 text-black hover:pointer backdrop-blur-md border-b border-white/10' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
@@ -71,7 +71,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {menuOpen && (
-        <div className="md:hidden bg-black/95 border-t border-white/10 px-6 py-4 space-y-3">
+        <div className="md:hidden bg-white  border-t border-white/10 px-6 py-4 space-y-3">
           {links.map((link) => (
             <Link
               key={link.href}

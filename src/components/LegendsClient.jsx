@@ -1,9 +1,10 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useMemo, useCallback } from 'react'
 import legends from '../data/legends.json'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Search } from 'lucide-react' // Optional: lucide-react for icons
+import { Search } from 'lucide-react'
+import Image from 'next/image'
 
 export default function LegendsClient() {
   const [selected, setSelected] = useState(null)
@@ -12,15 +13,22 @@ export default function LegendsClient() {
 
   const categories = ['All', 'Arts', 'Sports', 'Culture']
 
-  // 🔍 Filter logic: category + search
-  const filteredLegends = legends.filter((legend) => {
-    const matchesCategory = filter === 'All' || legend.category === filter
-    const matchesSearch = legend.name.toLowerCase().includes(search.toLowerCase())
-    return matchesCategory && matchesSearch
-  })
+  const handleFilter = useCallback((cat) => setFilter(cat), [])
+  const handleSearch = useCallback((e) => setSearch(e.target.value), [])
+  const handleSelect = useCallback((legend) => setSelected(legend), [])
+  const handleClose = useCallback(() => setSelected(null), [])
+
+  const filteredLegends = useMemo(() => {
+    const searchLower = search.toLowerCase()
+    return legends.filter((legend) => {
+      const matchesCategory = filter === 'All' || legend.category === filter
+      const matchesSearch = legend.name.toLowerCase().includes(searchLower)
+      return matchesCategory && matchesSearch
+    })
+  }, [filter, search])
 
   return (
-    <section className="bg-black pattern text-offwhite min-h-screen py-20">
+    <section className="bg-white pattern text-black min-h-screen py-20">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <h1 className="text-4xl md:text-5xl font-heading text-gold mb-2 text-center">
           Our Honored Legends
@@ -38,7 +46,7 @@ export default function LegendsClient() {
               type="text"
               placeholder="Search for a legend..."
               value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              onChange={handleSearch}
               className="w-full bg-white/10 text-offwhite border border-white/20 rounded-full py-2.5 pl-10 pr-4 placeholder:text-offwhite/50 focus:outline-none focus:ring-2 focus:ring-gold transition"
             />
           </div>
@@ -48,7 +56,7 @@ export default function LegendsClient() {
             {categories.map((cat) => (
               <button
                 key={cat}
-                onClick={() => setFilter(cat)}
+                onClick={() => handleFilter(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-medium ${
                   filter === cat
                     ? 'bg-gold text-black'
@@ -68,13 +76,15 @@ export default function LegendsClient() {
               <motion.div
                 key={legend.id}
                 whileHover={{ scale: 1.04 }}
-                onClick={() => setSelected(legend)}
+                onClick={() => handleSelect(legend)}
                 className="cursor-pointer bg-white/5 rounded-xl overflow-hidden shadow-lg hover:shadow-gold/20 transition"
               >
                 <div className="h-56 overflow-hidden">
-                  <img
+                  <Image
                     src={legend.image}
                     alt={legend.name}
+                    width={400}
+                    height={224}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -99,20 +109,22 @@ export default function LegendsClient() {
               exit={{ opacity: 0 }}
             >
               <motion.div
-                className="bg-black border border-white/10 rounded-2xl max-w-md w-full p-6 relative mx-4"
+                className="bg-white border border-white/10 rounded-2xl max-w-md w-full p-6 relative mx-4"
                 initial={{ scale: 0.95, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.95, opacity: 0 }}
               >
                 <button
                   className="absolute top-3 right-4 text-white/70 hover:text-gold text-2xl"
-                  onClick={() => setSelected(null)}
+                  onClick={handleClose}
                 >
                   &times;
                 </button>
-                <img
+                <Image
                   src={selected.image}
                   alt={selected.name}
+                  width={400}
+                  height={240}
                   className="w-full h-60 object-cover rounded-lg mb-4"
                 />
                 <h2 className="text-2xl font-heading text-gold mb-1">{selected.name}</h2>

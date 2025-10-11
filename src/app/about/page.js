@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <section className="py-20 bg-black pattern text-offwhite">
+    <section className="py-20 bg-white pattern text-black min-h-screen">
       <div className="max-w-6xl mx-auto px-6 md:px-8 space-y-12">
         {/* Intro */}
         <div>

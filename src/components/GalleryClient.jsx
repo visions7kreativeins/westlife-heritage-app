@@ -16,13 +16,13 @@ export default function GalleryClient() {
       : galleryData.filter((item) => item.category === filter)
 
   return (
-    <section className="bg-black pattern text-offwhite min-h-screen py-20">
+    <section className="bg-white pattern text-black min-h-screen py-20">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <h1 className="text-4xl md:text-5xl font-heading text-gold mb-2 text-center">
-          Festival Gallery
+           Gallery
         </h1>
         <p className="text-center text-offwhite/80 mb-10 max-w-2xl mx-auto">
-          Relive the unforgettable moments of the Best of the West Festival through pictures and videos.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam repudiandae laborum consequatur nam cupiditate quibusdam odit optio, corporis doloremque rem voluptatem illum. Molestias inventore provident a tempore nulla animi id.
         </p>
 
         {/* Filter Buttons */}
@@ -33,7 +33,7 @@ export default function GalleryClient() {
               onClick={() => setFilter(cat)}
               className={`px-4 py-2 rounded-full text-sm font-medium ${
                 filter === cat
-                  ? 'bg-gold text-black'
+                  ? ' bg-amber-500 text-black'
                   : 'bg-white/10 text-offwhite hover:bg-white/20'
               } transition`}
             >

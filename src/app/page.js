@@ -46,7 +46,7 @@ export default function Home() {
       </section>
 
       {/* Countdown */}
-      <section className="py-16 bg-black/90 pattern text-center">
+      <section className="py-16 bg-yellow-50 pattern text-center">
         <h2 className="text-3xl font-heading text-gold mb-6">
           Countdown to Jam Splash 2025
         </h2>
@@ -78,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* Legends Preview */}
-      <section className="py-20 bg-black/95 pattern">
+      <section className="py-20 bg-yellow-50 pattern">
         <div className="max-w-6xl mx-auto px-6 md:px-8 text-center">
           <h2 className="text-4xl font-heading text-gold mb-8">Meet the Legends</h2>
           <p className="text-offwhite/80 max-w-2xl mx-auto mb-10">
@@ -108,7 +108,7 @@ export default function Home() {
       </section>
 
       {/* Sponsors / Call to Action */}
-      <section className="py-20 bg-black/85 text-center pattern">
+      <section className="py-20 bg-black/85 text-center text-white pattern">
         <h2 className="text-4xl font-heading text-gold mb-6">Join the Celebration</h2>
         <p className="text-offwhite/80 max-w-2xl mx-auto mb-8">
           Partner with us to make the Best of the West Festival a legacy of unity, heritage, and pride.  

@@ -10,7 +10,7 @@ export default function ProgramClient() {
   const toggle = (id) => setOpenItem(openItem === id ? null : id)
 
   return (
-    <section className="bg-black pattern text-offwhite min-h-screen py-20">
+    <section className="bg-white pattern text-black min-h-screen py-20">
       <div className="max-w-5xl mx-auto px-6 md:px-8">
         <h1 className="text-4xl md:text-5xl font-heading text-gold mb-2 text-center">
           Festival Program Timeline
